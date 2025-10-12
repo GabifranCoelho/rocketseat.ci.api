@@ -10,6 +10,7 @@ jobs:
     name: 'Build and Push'
     runs-on: ubuntu-latest
 
-    steps: actions/checkout@v5
+    steps: 
+    - uses: actions/checkout@v5
 
 
