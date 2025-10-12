@@ -16,9 +16,13 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v5
       with:
-        node-version: 20
-        cache: 'yarn'
-    - run: yarn
-    - run: yarn run test
-
+          node-version: 20
+          cache: 'npm'  # Alterado para usar cache do npm
+      
+    - run: npm ci     # Usa npm ci para instalação mais rápida e confiável
+      
+    - run: npm test   # Executa os testes usando npm
+      
+      
+      
 
