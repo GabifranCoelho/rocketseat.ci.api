@@ -9,17 +9,19 @@ jobs:
   build:
     name: 'Build and Push'
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ 18, 19, 20]
+    #strategy:
+    #  matrix:
+    #    node: [ 18, 19, 20]
 
     steps: 
     - uses: actions/checkout@v5
 
-    - name: Setup node |  ${{ matrix.node }}
+    #- name: Setup node |  ${{ matrix.node }}
+    - name: Setup node
       uses: actions/setup-node@v5
       with:
-          node-version: ${{ matrix.node }}
+        #  node-version: ${{ matrix.node }}
+          node-version: 18
           cache: 'npm'  # Alterado para usar cache do npm
       
     - run: npm ci     # Usa npm ci para instalação mais rápida e confiável
