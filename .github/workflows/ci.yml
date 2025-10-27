@@ -69,7 +69,7 @@ jobs:
       uses: awslabs/amazon-app-runner-deploy@main
       with:
         service: rocketseat-api
-        image: 656003592068.dkr.ecr.us-east-2.amazonaws.com/rocketseat-ci:7b49fd2
+        image: ${{ steps.build-docker-image.outputs.image }}
         access-role-arn: arn:aws:iam::656003592068:role/app-runner-role
         region: us-east-2
         cpu: 1
