@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/GabifranCoelho/rocketseat.ci.api/compare/v1.0.0...v1.0.1) (2025-10-27)
+
+
+### Bug Fixes
+
+* permissions and time for wait deploy ([db3e741](https://github.com/GabifranCoelho/rocketseat.ci.api/commit/db3e741336cfe4047eb3970cbb25a9a1c6bb4dcf))
+
 # 1.0.0 (2025-10-27)
 
 
